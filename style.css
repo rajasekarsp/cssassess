@@ -1,0 +1,120 @@
+/*Begin here*/
+ul, ul li {list-style: none; padding: 0px;}
+button {border: none;}
+
+ul.dropdown-menu {
+}
+
+ul.dropdown-menu > li > button {
+    position: relative;
+    text-decoration: none;
+    padding: 13px 0px;
+    border-radius: 30px;
+    width: 200px;
+    display: block;
+    text-align: center;
+    background-color: #00ABE7;
+    color:#fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+ul.dropdown-menu > li > button span {
+    position: absolute;
+    right: 20px;
+    top: calc(50% - 3.5px);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 3.5px 0 3.5px;
+    border-color: #ffffff transparent transparent transparent;
+}
+
+ul.dropdown-menu > li > button:focus {
+    border: 1px solid #0070B4;
+}
+
+ul.dropdown-menu > li > button:hover {
+    background-color:#7FD5F3;
+    border: none;
+}
+
+ul.dropdown-menu > li > button:active {
+    background-color:#0070B4;
+    border: none;
+}
+
+ul.dropdown-menu > li > button:disabled {
+    background-color:#BFEAF9;
+    border: none;
+    cursor:not-allowed;
+}
+
+ul.dropdown-menu > li {
+    position: relative;
+}
+
+ul.dropdown-menu > li > div {
+    display: none;
+    padding-top: 10px;
+}
+
+ul.dropdown-menu > li  ul {
+    background-color:#fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #0000000D;
+    border: 1px solid #ddd;
+    width: 200px;
+    position: absolute;
+    padding:10px 0px;
+}
+
+ul.dropdown-menu > li:hover > div  {
+    display: block;
+}
+
+ul.dropdown-menu > li ul::after {
+    content: ' ';
+    position: absolute;
+    right: 20px;
+
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5.5px 7px 5.5px;
+    border-color: transparent transparent #ffffff transparent;
+    top: -7px;
+
+}
+
+ul.dropdown-menu > li ul::before {
+    content: ' ';
+    position: absolute;
+    right: 20px;
+        width: 0;
+        height: 0;
+    border-style: solid;
+    border-width: 0 5.5px 8px 5.5px;
+    border-color: transparent transparent #dddddd transparent;
+    top: -9px;
+
+    
+
+}
+
+ul.dropdown-menu > li ul > li{
+    padding: 12px 20px;
+    color:#7F7F7F;
+    cursor: pointer;
+}
+
+ul.dropdown-menu > li ul > li:first-child{
+    border-left:5px solid #0070B4;
+    color:#333333;
+}
+
+ul.dropdown-menu > li ul > li:hover{
+    color:#333333;
+    background-color:#EEF1F4;
+}
+
